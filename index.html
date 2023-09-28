@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Programação de Funcionários</h1>
+    <div class="container">
+        <label for="dia">Dia:</label>
+        <select name="dia" id="dia" required>
+            
+        </select>
+        <label for="mes">Mês:</label>
+        <select name="mes" id="mes" required>
+            
+        </select>
+        <button type="button" onclick="gerarProgramacao()">Gerar Programação</button>
+    </div>
+    
+    <div class="container" id="tabelaContainer" style="display: none;">
+        <h2>Programação para o dia <span id="dataSelecionada"></span></h2>
+        <table>
+            <tr>
+                <th>Funcionário</th>
+                <th>Função</th>
+            </tr>
+            <!-- Os dados da tabela serão adicionados aqui dinamicamente -->
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
